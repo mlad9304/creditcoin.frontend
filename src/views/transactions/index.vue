@@ -26,7 +26,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4 text-truncate">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4 text-truncate">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>
@@ -38,7 +38,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>
@@ -49,7 +49,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>
@@ -60,7 +60,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>
@@ -71,7 +71,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>
@@ -82,7 +82,7 @@
               <a href="#" class="table-item-wrapper w-inline-block">
                 <div class="w-layout-grid grid-11">
                   <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
+                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
                   <div class="text-block-16">39 seconds ago</div>
                   <div class="text-block-16">Creditcoin_xyz</div>
                   <div class="text-block-16">10 CREC</div>

@@ -8,7 +8,7 @@
         <div class="navbar-right">
           <nav role="navigation" class="nav-menu w-nav-menu">
             <router-link to="/transactions" class="nav-link w-nav-link">TRANSACTIONS</router-link>
-            <a href="#" class="nav-link w-nav-link">BLOCKS</a>
+            <router-link to="/blocks" class="nav-link w-nav-link">BLOCKS</router-link>
             <a href="#" class="nav-link w-nav-link">GLUWA</a>
           </nav>
           <div class="form-block w-form">
