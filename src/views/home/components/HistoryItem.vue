@@ -3,7 +3,7 @@
     <div class="w-layout-grid grid-4">
       <div class="block-history-block">
         <div class="block-id">BLOCK {{block.blockNum}}</div>
-        <div>{{blockTimeAgo}} ago</div>
+        <div>{{blockTimesAgo}} ago</div>
       </div>
       <div class="block-history-details">
         <a href="#" class="hash-link w-inline-block">
@@ -24,14 +24,14 @@
 </template>
 
 <script>
-import { timeAgo } from '@/utils/formatters'
+import { timesAgo } from '@/utils/formatters'
 
 export default {
   name: 'history-item',
   props: ['block'],
   computed: {
-    blockTimeAgo () {
-      return timeAgo(this.block.timestamp)
+    blockTimesAgo () {
+      return timesAgo(this.block.timestamp)
     },
     signerPubKey () {
       return this.block.signerPubKey.substr(0, 15)

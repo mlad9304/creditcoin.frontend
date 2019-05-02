@@ -2,12 +2,14 @@ import appAPI from '@/api/app'
 
 const state = {
   blockchainInfo: {},
-  blockHistory: {}
+  blockHistory: {},
+  lastBlock: {}
 }
 
 const getters = {
   blockchainInfo: state => state.blockchainInfo,
-  blockHistory: state => state.blockHistory
+  blockHistory: state => state.blockHistory,
+  lastBlock: state => state.lastBlock
 }
 
 const actions = {
@@ -18,12 +20,17 @@ const actions = {
   async fetchBlockHistory ({ commit }) {
     const response = await appAPI.fetchBlockHistory()
     commit('setBlockHistory', response.data.data)
+  },
+  async fetchLastBlock ({ commit }) {
+    const response = await appAPI.fetchBlockHistory(1)
+    commit('setLastBlock', response.data.data)
   }
 }
 
 const mutations = {
   setBlockchainInfo: (state, blockchainInfo) => (state.blockchainInfo = blockchainInfo),
-  setBlockHistory: (state, blockHistory) => (state.blockHistory = blockHistory)
+  setBlockHistory: (state, blockHistory) => (state.blockHistory = blockHistory),
+  setLastBlock: (state, block) => (state.lastBlock = block)
 }
 
 export default {

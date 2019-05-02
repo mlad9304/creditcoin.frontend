@@ -4,7 +4,7 @@
       <div class="w-layout-grid grid">
         <div>
           <Info :blockchainInfo="blockchainInfo"/>
-          <Transaction />
+          <Transactions v-for="(block, key) in lastBlock" :key="key" :block="block"/>
         </div>
         <div>
           <History :blockHistory="blockHistory" />
@@ -18,23 +18,24 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import Info from './components/Info'
-import Transaction from './components/Transaction'
+import Transactions from './components/Transactions'
 import History from './components/History'
 import About from './components/About'
 
 export default {
   name: 'home',
   methods: {
-    ...mapActions(['fetchBlockchainInfo', 'fetchBlockHistory'])
+    ...mapActions(['fetchBlockchainInfo', 'fetchBlockHistory', 'fetchLastBlock'])
   },
-  computed: mapGetters(['blockchainInfo', 'blockHistory']),
+  computed: mapGetters(['blockchainInfo', 'blockHistory', 'lastBlock']),
   created () {
     this.fetchBlockchainInfo()
     this.fetchBlockHistory()
+    this.fetchLastBlock()
   },
   components: {
     Info,
-    Transaction,
+    Transactions,
     History,
     About
   }

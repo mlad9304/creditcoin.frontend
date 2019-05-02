@@ -5,7 +5,7 @@ function pluralize (time, label) {
   return time + label + 's'
 }
 
-export function timeAgo (time) {
+export function timesAgo (time) {
   const between = Date.now() / 1000 - new Date(time).getTime() / 1000
   if (between < 3600) {
     return pluralize(~~(between / 60), ' minute')
