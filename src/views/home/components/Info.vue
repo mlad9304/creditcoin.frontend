@@ -4,14 +4,14 @@
     <div class="block credit-coin-block">
       <div>
         <div class="text-block">Total supply</div>
-        <div class="card-big-number">10,000,000 CREC</div>
+        <div class="card-big-number">2,000,000,000 CREC</div>
         <div class="text-block">Circulation Supply</div>
         <div class="card-big-number">{{circulationSupply}} CREC</div>
         <div class="blockhain-info-details">
           <div class="w-layout-grid grid-2">
             <div class="div-block-12">
               <div class="text-block-2">Relay Fee:</div>
-              <div class="blockchain-small-number">0.004</div>
+              <div class="blockchain-small-number">{{trnsactionFee}}</div>
             </div>
             <div class="div-block-12">
               <div class="text-block-2">Block Height:</div>
@@ -61,6 +61,9 @@ export default {
     },
     networkWeight () {
       return numberFormatter(this.blockchainInfo.networkWeight, 0)
+    },
+    trnsactionFee () {
+      return crecFormatter(this.blockchainInfo.trnsactionFee, 8)
     }
   }
 }
