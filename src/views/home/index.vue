@@ -7,7 +7,7 @@
           <Transaction />
         </div>
         <div>
-          <History />
+          <History :blockHistory="blockHistory" />
           <About />
         </div>
       </div>
@@ -25,11 +25,12 @@ import About from './components/About'
 export default {
   name: 'home',
   methods: {
-    ...mapActions(['fetchBlockchainInfo'])
+    ...mapActions(['fetchBlockchainInfo', 'fetchBlockHistory'])
   },
-  computed: mapGetters(['blockchainInfo']),
+  computed: mapGetters(['blockchainInfo', 'blockHistory']),
   created () {
     this.fetchBlockchainInfo()
+    this.fetchBlockHistory()
   },
   components: {
     Info,
