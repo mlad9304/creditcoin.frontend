@@ -3,7 +3,7 @@
     <div class="container w-container">
       <div class="w-layout-grid grid">
         <div>
-          <Info :blockchainInfo="blockchainInfo"/>
+          <Info :totalSupply="totalSupply" :blockchainInfo="blockchainInfo" />
           <Transactions v-for="(block, key) in lastBlock" :key="key" :block="block"/>
         </div>
         <div>
@@ -25,9 +25,18 @@ import About from './components/About'
 export default {
   name: 'home',
   methods: {
-    ...mapActions(['fetchBlockchainInfo', 'fetchBlockHistory', 'fetchLastBlock'])
+    ...mapActions([
+      'fetchBlockchainInfo',
+      'fetchBlockHistory',
+      'fetchLastBlock'
+    ])
   },
-  computed: mapGetters(['blockchainInfo', 'blockHistory', 'lastBlock']),
+  computed: mapGetters([
+    'totalSupply',
+    'blockchainInfo',
+    'blockHistory',
+    'lastBlock'
+  ]),
   created () {
     this.fetchBlockchainInfo()
     this.fetchBlockHistory()

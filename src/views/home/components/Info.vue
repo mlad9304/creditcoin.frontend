@@ -4,7 +4,7 @@
     <div class="block credit-coin-block">
       <div>
         <div class="text-block">Total supply</div>
-        <div class="card-big-number">2,000,000,000 CREC</div>
+        <div class="card-big-number">{{totalSupplyStr}} CREC</div>
         <div class="text-block">Circulation Supply</div>
         <div class="card-big-number">{{circulationSupply}} CREC</div>
         <div class="blockhain-info-details">
@@ -45,8 +45,11 @@ import { numberFormatter, crecFormatter } from '@/utils/formatters'
 
 export default {
   name: 'info',
-  props: ['blockchainInfo'],
+  props: ['totalSupply', 'blockchainInfo'],
   computed: {
+    totalSupplyStr () {
+      return numberFormatter(this.totalSupply, 0)
+    },
     circulationSupply () {
       return crecFormatter(this.blockchainInfo.circulationSupply, 8)
     },

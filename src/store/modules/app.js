@@ -1,12 +1,14 @@
 import appAPI from '@/api/app'
 
 const state = {
+  totalSupply: 2000000000,
   blockchainInfo: {},
   blockHistory: {},
   lastBlock: {}
 }
 
 const getters = {
+  totalSupply: state => state.totalSupply,
   blockchainInfo: state => state.blockchainInfo,
   blockHistory: state => state.blockHistory,
   lastBlock: state => state.lastBlock
