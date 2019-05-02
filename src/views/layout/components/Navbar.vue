@@ -1,9 +1,16 @@
 <template>
   <div class="navbar-wrapper">
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
-      <div class="container navbar-container w-container"><a href="index.html" class="brand w-nav-brand w--current"><img src="@/assets/images/logo2x.png" width="250" alt=""></a>
+      <div class="container navbar-container w-container">
+        <a href="/" class="brand w-nav-brand w--current">
+          <img src="@/assets/images/logo2x.png" width="250" alt="">
+        </a>
         <div class="navbar-right">
-          <nav role="navigation" class="nav-menu w-nav-menu"><a href="#" class="nav-link w-nav-link">TRANSACTIONS</a><a href="#" class="nav-link w-nav-link">BLOCKS</a><a href="#" class="nav-link w-nav-link">GLUWA</a></nav>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <router-link to="/transactions" class="nav-link w-nav-link">TRANSACTIONS</router-link>
+            <a href="#" class="nav-link w-nav-link">BLOCKS</a>
+            <a href="#" class="nav-link w-nav-link">GLUWA</a>
+          </nav>
           <div class="form-block w-form">
             <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field w-input" maxlength="256" name="search-2" data-name="Search 2" placeholder="Search for block, txhash or address" id="search-2" required=""><input type="submit" data-wait="Please wait..." value=" " class="submit-button w-button"></form>
             <div class="w-form-done">
