@@ -6,7 +6,7 @@
         <div class="text-block">Total supply</div>
         <div class="card-big-number">10,000,000 CREC</div>
         <div class="text-block">Circulation Supply</div>
-        <div class="card-big-number">1,000,000 CREC</div>
+        <div class="card-big-number">{{circulationSupply}} CREC</div>
         <div class="blockhain-info-details">
           <div class="w-layout-grid grid-2">
             <div class="div-block-12">
@@ -41,8 +41,16 @@
 </template>
 
 <script>
+import { crecFormatter } from '@/utils/formatters'
+
 export default {
-  name: 'info'
+  name: 'info',
+  props: ['blockchainInfo'],
+  computed: {
+    circulationSupply () {
+      return crecFormatter(this.blockchainInfo.circulationSupply, 5)
+    }
+  }
 }
 </script>
 

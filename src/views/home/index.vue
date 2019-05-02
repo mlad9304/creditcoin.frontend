@@ -3,7 +3,7 @@
     <div class="container w-container">
       <div class="w-layout-grid grid">
         <div>
-          <Info />
+          <Info :blockchainInfo="blockchainInfo"/>
           <Transaction />
         </div>
         <div>

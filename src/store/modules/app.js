@@ -19,7 +19,7 @@ const actions = {
 }
 
 const mutations = {
-  setBlockchainInfo: (state, data) => (state.blockchainInfo = data)
+  setBlockchainInfo: (state, blockchainInfo) => (state.blockchainInfo = blockchainInfo)
 }
 
 export default {
