@@ -5,12 +5,12 @@
 </template>
 
 <script>
+import './assets/css/normalize.css'
 import './assets/css/components.css'
 import './assets/css/creditcoin.css'
-import './assets/css/normalize.css'
 
 export default {
-  name: 'App'
+  name: 'app'
 }
 </script>
 

@@ -1,12 +1,16 @@
 <template>
-  <div class="w-layout-grid grid">
-    <div>
-      <Info />
-      <Transaction />
-    </div>
-    <div>
-      <History />
-      <About />
+  <div class="page-wrapper">
+    <div class="container w-container">
+      <div class="w-layout-grid grid">
+        <div>
+          <Info />
+          <Transaction />
+        </div>
+        <div>
+          <History />
+          <About />
+        </div>
+      </div>
     </div>
   </div>
 </template>

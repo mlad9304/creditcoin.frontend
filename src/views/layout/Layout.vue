@@ -1,11 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <div class="page-wrapper">
-      <div class="container w-container">
-        <AppMain />
-      </div>
-    </div>
+    <AppMain />
     <div class="w-embed"></div>
   </div>
 </template>
