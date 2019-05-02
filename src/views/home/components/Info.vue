@@ -15,11 +15,11 @@
             </div>
             <div class="div-block-12">
               <div class="text-block-2">Block Height:</div>
-              <div class="blockchain-small-number">329,541</div>
+              <div class="blockchain-small-number">{{blockHeight}}</div>
             </div>
             <div id="w-node-904e671baaf2-146d1efd" class="div-block-12">
               <div class="text-block-2">Difficulty:</div>
-              <div class="blockchain-small-number text-truncate">3,545,099.39080108</div>
+              <div class="blockchain-small-number text-truncate">{{difficulty}}</div>
             </div>
             <div class="div-block-12">
               <div class="text-block-2">Connections:</div>
@@ -27,11 +27,11 @@
             </div>
             <div class="div-block-12">
               <div class="text-block-2">Block Reward:</div>
-              <div class="blockchain-small-number">5 CREC</div>
+              <div class="blockchain-small-number">{{blockReward}} CREC</div>
             </div>
             <div id="w-node-1afcb2d6ec37-146d1efd" class="div-block-12">
               <div class="text-block-2">Network Weight:</div>
-              <div class="blockchain-small-number text-truncate">13,563,683.14025867</div>
+              <div class="blockchain-small-number text-truncate">{{networkWeight}}</div>
             </div>
           </div>
         </div>
@@ -41,14 +41,26 @@
 </template>
 
 <script>
-import { crecFormatter } from '@/utils/formatters'
+import { numberFormatter, crecFormatter } from '@/utils/formatters'
 
 export default {
   name: 'info',
   props: ['blockchainInfo'],
   computed: {
     circulationSupply () {
-      return crecFormatter(this.blockchainInfo.circulationSupply, 5)
+      return crecFormatter(this.blockchainInfo.circulationSupply, 8)
+    },
+    blockHeight () {
+      return numberFormatter(this.blockchainInfo.blockHeight, 0)
+    },
+    difficulty () {
+      return numberFormatter(this.blockchainInfo.difficulty, 0)
+    },
+    blockReward () {
+      return crecFormatter(this.blockchainInfo.blockReward, 8)
+    },
+    networkWeight () {
+      return numberFormatter(this.blockchainInfo.networkWeight, 0)
     }
   }
 }
