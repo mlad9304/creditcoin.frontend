@@ -1,4 +1,4 @@
-import axios from 'axios'
+import appAPI from '@/api/app'
 
 const state = {
   blockchainInfo: {}
@@ -10,9 +10,7 @@ const getters = {
 
 const actions = {
   async fetchBlockchainInfo ({ commit }) {
-    const response = await axios.get(
-      'https://creditcoinapi-test.azurewebsites.net/api/blockchain'
-    )
+    const response = await appAPI.fetchBlockchainInfo()
 
     commit('setBlockchainInfo', response.data)
   }
