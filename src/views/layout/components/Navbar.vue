@@ -19,13 +19,28 @@
             <div class="w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
-          </div><a data-w-id="0f60cadd-d854-c831-ed26-eccf9ef3e2b5" href="#" class="search-mobile w-inline-block"><img src="@/assets/images/icon-search.svg" width="14" alt=""></a></div>
-        <div class="menu-button w-nav-button">
+          </div>
+          <a @click.stop="toggleMobileSearch" data-w-id="0f60cadd-d854-c831-ed26-eccf9ef3e2b5" href="#" class="search-mobile w-inline-block">
+            <img src="@/assets/images/icon-search.svg" width="14" alt="">
+          </a>
+        </div>
+        <div @click="toggleNavMenu" class="menu-button w-nav-button" :class="{'w--open': isOpenNavMenu}">
           <div class="w-icon-nav-menu"></div>
         </div>
       </div>
+      <div class="w-nav-overlay" data-wf-ignore="" style="height: 2076px; display: block;">
+        <nav
+          role="navigation"
+          class="nav-menu w-nav-menu"
+          :class="{'w--nav-menu-open': isOpenNavMenu}"
+        >
+          <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">TRANSACTIONS</a>
+          <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">BLOCKS</a>
+          <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">GLUWA</a>
+        </nav>
+      </div>
     </div>
-    <!-- <div data-w-id="0f60cadd-d854-c831-ed26-eccf9ef3e2b9" class="search-mobile-block">
+    <div data-w-id="0f60cadd-d854-c831-ed26-eccf9ef3e2b9" class="search-mobile-block" :class="{'active': isActiveMobileSearch}">
       <div class="form-block mobile w-form">
         <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field w-input" maxlength="256" name="search-2" data-name="Search 2" placeholder="Search for block, txhash or address" id="search-2" required=""><input type="submit" data-wait="Please wait..." value=" " class="submit-button w-button"></form>
         <div class="w-form-done">
@@ -35,13 +50,29 @@
           <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'navbar'
+  name: 'navbar',
+  data () {
+    return {
+      isActiveMobileSearch: false,
+      isOpenNavMenu: false
+    }
+  },
+  methods: {
+    toggleMobileSearch () {
+      this.isActiveMobileSearch = !this.isActiveMobileSearch
+      this.isOpenNavMenu = false
+    },
+    toggleNavMenu () {
+      this.isOpenNavMenu = !this.isOpenNavMenu
+      this.isActiveMobileSearch = false
+    }
+  }
 }
 </script>
 

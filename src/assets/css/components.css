@@ -1645,6 +1645,13 @@ textarea.w-select {
   overflow: visible;
   min-width: 200px;
 }
+.w-nav-menu {
+  transform: translateY(-200px) translateX(0px);
+  transition: transform 400ms ease 0s;
+}
+.w-nav-menu.w--nav-menu-open {
+  transform: translateY(0px) translateX(0px);
+}
 .w--nav-link-open {
   display: block;
   position: relative;

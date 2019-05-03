@@ -926,6 +926,10 @@ a {
   text-align: center;
 }
 
+.search-mobile-block {
+  display: none;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 45px;
@@ -1371,6 +1375,14 @@ a {
     justify-content: center;
     background-color: hsla(208.6956521739131, 92.00%, 95.10%, 1.00);
     box-shadow: 0 20px 20px 9px hsla(235.5, 51.28%, 15.29%, 0.15);
+
+    transform: translate3d(0px, -200px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s ease;
+  }
+  .search-mobile-block.active {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
   .text-block-11 {
     margin-right: 20px;
