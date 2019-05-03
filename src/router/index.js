@@ -21,6 +21,11 @@ export default new Router({
           component: () => import('@/views/transactions/index')
         },
         {
+          path: 'transactions/:transaction_id',
+          name: 'transaction-detail',
+          component: () => import('@/views/transaction-detail/index')
+        },
+        {
           path: 'blocks',
           name: 'blocks',
           component: () => import('@/views/blocks/index')

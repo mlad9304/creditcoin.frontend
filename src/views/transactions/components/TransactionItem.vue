@@ -1,6 +1,9 @@
 <template>
   <li class="table-item">
-    <a href="#" class="table-item-wrapper w-inline-block">
+    <router-link
+      :to="{name: 'transaction-detail', params: {transaction_id: hash}}"
+      class="table-item-wrapper w-inline-block"
+    >
       <div class="w-layout-grid grid-11">
         <div class="div-block-14">
           <div class="text-block-4 text-truncate">{{hash | summarize}}…</div>
@@ -10,7 +13,7 @@
         <div class="text-block-16">{{transaction.sighash | summarize(24)}}...</div>
         <div class="text-block-16">{{transaction.payload}}</div>
       </div>
-    </a>
+    </router-link>
   </li>
 </template>
 

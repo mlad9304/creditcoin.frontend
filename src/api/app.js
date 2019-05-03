@@ -21,8 +21,16 @@ const fetchBlockDetail = (blockId) => {
   })
 }
 
+const fetchBlockForTx = (transactionId) => {
+  return request({
+    url: `/api/blocks/forTxid/${transactionId}`,
+    method: 'get'
+  })
+}
+
 export default {
   fetchBlockchainInfo,
   fetchBlocks,
-  fetchBlockDetail
+  fetchBlockDetail,
+  fetchBlockForTx
 }
