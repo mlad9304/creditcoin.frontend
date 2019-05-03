@@ -34,8 +34,8 @@
           class="nav-menu w-nav-menu"
           :class="{'w--nav-menu-open': isOpenNavMenu}"
         >
-          <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">TRANSACTIONS</a>
-          <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">BLOCKS</a>
+          <router-link to="/transactions" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">TRANSACTIONS</router-link>
+          <router-link to="/blocks" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">BLOCKS</router-link>
           <a href="#" class="nav-link w-nav-link w--nav-link-open" style="max-width: 1320px;">GLUWA</a>
         </nav>
       </div>
