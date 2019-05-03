@@ -33,7 +33,7 @@ export function crecFormatter (num, digits = 8) {
 }
 
 export function datetimeFormatter (datetime) {
-  return moment(new Date(datetime)).format('MMMM Do, YYYY h:mm:ss a')
+  return moment(new Date(datetime)).format('MMMM D, YYYY h:mm:ss A')
 }
 
 export function summarize (str, length = 15) {
