@@ -21,75 +21,12 @@
               <div>Payload</div>
             </div>
           </div>
-          <ul class="w-list-unstyled">
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4 text-truncate">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item"></li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-11">
-                  <div class="div-block-14">
-                    <div class="text-block-4">03ef0116Ka548Cu…</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-16">39 seconds ago</div>
-                  <div class="text-block-16">Creditcoin_xyz</div>
-                  <div class="text-block-16">10 CREC</div>
-                </div>
-              </a>
-            </li>
-          </ul>
+          <TransactionHistory
+            v-for="block in lastBlock"
+            :key="block.blockNum"
+            :transactions="block.transactions"
+            :timestamp="block.timestamp"
+          />
         </div>
         <div class="ghost-block-1"></div>
         <div class="ghost-block-2"></div>
@@ -100,8 +37,23 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
+import TransactionHistory from './components/TransactionHistory'
+
 export default {
-  name: 'transactions'
+  name: 'transactions',
+  methods: {
+    ...mapActions(['fetchLastBlock'])
+  },
+  computed: {
+    ...mapGetters(['lastBlock'])
+  },
+  created () {
+    this.fetchLastBlock()
+  },
+  components: {
+    TransactionHistory
+  }
 }
 </script>
 
