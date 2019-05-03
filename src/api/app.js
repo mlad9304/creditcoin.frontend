@@ -14,7 +14,15 @@ const fetchBlocks = (limit = 3) => {
   })
 }
 
+const fetchBlockDetail = (blockId) => {
+  return request({
+    url: `/api/blocks/${blockId}`,
+    method: 'get'
+  })
+}
+
 export default {
   fetchBlockchainInfo,
-  fetchBlocks
+  fetchBlocks,
+  fetchBlockDetail
 }

@@ -24,6 +24,11 @@ export default new Router({
           path: 'blocks',
           name: 'blocks',
           component: () => import('@/views/blocks/index')
+        },
+        {
+          path: 'blocks/:block_id',
+          name: 'block-detail',
+          component: () => import('@/views/block-detail/index')
         }
       ]
     }

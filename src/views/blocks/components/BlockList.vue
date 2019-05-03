@@ -1,6 +1,11 @@
 <template>
   <ul class="w-list-unstyled">
-    <BlockItem v-for="block in blocks" :key="block.blockNum" :block="block" />
+    <BlockItem
+      v-for="(block, block_id) in blocks"
+      :key="block.block_id"
+      :block="block"
+      :block_id="block_id"
+    />
   </ul>
 </template>
 

@@ -5,7 +5,8 @@ const state = {
   blockchainInfo: {},
   blockHistory: {},
   lastBlock: {},
-  blocksByDate: {}
+  blocksByDate: {},
+  blockDetail: {}
 }
 
 const getters = {
@@ -13,7 +14,8 @@ const getters = {
   blockchainInfo: state => state.blockchainInfo,
   blockHistory: state => state.blockHistory,
   lastBlock: state => state.lastBlock,
-  blocksByDate: state => state.blocksByDate
+  blocksByDate: state => state.blocksByDate,
+  blockDetail: state => state.blockDetail
 }
 
 const actions = {
@@ -32,6 +34,10 @@ const actions = {
   async fetchBlocksByDate ({ commit }) {
     const response = await appAPI.fetchBlocks(8)
     commit('setBlocksByDate', response.data.data)
+  },
+  async fetchBlockDetail ({ commit }, blockId) {
+    const response = await appAPI.fetchBlockDetail(blockId)
+    commit('setBlockDetail', response.data)
   }
 }
 
@@ -39,7 +45,8 @@ const mutations = {
   setBlockchainInfo: (state, blockchainInfo) => (state.blockchainInfo = blockchainInfo),
   setBlockHistory: (state, blocks) => (state.blockHistory = blocks),
   setLastBlock: (state, block) => (state.lastBlock = block),
-  setBlocksByDate: (state, blocks) => (state.blocksByDate = blocks)
+  setBlocksByDate: (state, blocks) => (state.blocksByDate = blocks),
+  setBlockDetail: (state, block) => (state.blockDetail = block)
 }
 
 export default {
