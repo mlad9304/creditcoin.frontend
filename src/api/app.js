@@ -7,7 +7,7 @@ const fetchBlockchainInfo = () => {
   })
 }
 
-const fetchBlockHistory = (limit = 3) => {
+const fetchBlocks = (limit = 3) => {
   return request({
     url: `/api/blocks?limit=${limit}`,
     method: 'get'
@@ -16,5 +16,5 @@ const fetchBlockHistory = (limit = 3) => {
 
 export default {
   fetchBlockchainInfo,
-  fetchBlockHistory
+  fetchBlocks
 }

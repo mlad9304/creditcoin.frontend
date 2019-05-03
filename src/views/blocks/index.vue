@@ -21,104 +21,7 @@
               <div>Mined by</div>
             </div>
           </div>
-          <ul class="w-list-unstyled">
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-3478025075f4-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-4fa5949c619f-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-ac8d6181303d-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-bcfb79e3c163-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-3f350e7d6b69-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-4477efd3517f-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-            <li class="table-item">
-              <a href="#" class="table-item-wrapper w-inline-block">
-                <div class="w-layout-grid grid-6">
-                  <div class="div-block-2">
-                    <div class="text-block-4">330158</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                  <div class="text-block-11">March 5, 2019 9:43:12 AM</div>
-                  <div>30</div>
-                  <div id="w-node-26a0a3a6a132-86e241c5" class="div-block-2">
-                    <div class="text-block-12">QMPDKdutAbQp1zA2wWJSDHWNoojPrPE5tc</div><img src="@/assets/images/icon-arrow-right.svg" width="9" alt="" class="image"></div>
-                </div>
-              </a>
-            </li>
-          </ul>
+          <BlockList :blocks="blocksByDate" />
         </div>
         <div class="ghost-block-1"></div>
         <div class="ghost-block-2"></div>
@@ -130,8 +33,23 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+import BlockList from './components/BlockList'
+
 export default {
-  name: 'blocks'
+  name: 'blocks',
+  methods: {
+    ...mapActions(['fetchBlocksByDate'])
+  },
+  computed: {
+    ...mapGetters(['blocksByDate'])
+  },
+  created () {
+    this.fetchBlocksByDate()
+  },
+  components: {
+    BlockList
+  }
 }
 </script>
 
