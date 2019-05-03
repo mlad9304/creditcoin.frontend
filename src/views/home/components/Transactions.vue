@@ -10,7 +10,8 @@
           :hash="hash"
           :blockTimestamp="block.timestamp"
         />
-      </ul><a href="#" class="button w-button">SEE MORE TRANSACTIONS</a>
+      </ul>
+      <router-link to="/transactions" class="button w-button">SEE MORE TRANSACTIONS</router-link>
     </div>
   </div>
 </template>
