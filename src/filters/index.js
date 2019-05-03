@@ -37,5 +37,6 @@ export function datetimeFormatter (datetime) {
 }
 
 export function summarize (str, length = 15) {
+  if (!str) return ''
   return str.substr(0, length)
 }

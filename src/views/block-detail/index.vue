@@ -9,7 +9,6 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import store from '@/store'
 import BlockInfo from './components/BlockInfo'
 import Transactions from './components/Transactions'
 
@@ -21,13 +20,12 @@ export default {
   computed: {
     ...mapGetters(['blockDetail'])
   },
-  beforeRouteEnter (to, from, next) {
-    store.dispatch('fetchBlockDetail', to.params.block_id)
-    next()
-  },
   components: {
     BlockInfo,
     Transactions
+  },
+  created () {
+    this.fetchBlockDetail(this.$route.params.block_id)
   }
 }
 </script>

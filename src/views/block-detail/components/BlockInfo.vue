@@ -84,6 +84,7 @@ export default {
   props: ['block', 'block_id'],
   computed: {
     numberOfTransactions () {
+      if (!this.block.transactions) return 0
       return Object.keys(this.block.transactions).length
     }
   }
