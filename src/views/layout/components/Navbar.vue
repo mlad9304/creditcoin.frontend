@@ -71,7 +71,13 @@ export default {
     toggleNavMenu () {
       this.isOpenNavMenu = !this.isOpenNavMenu
       this.isActiveMobileSearch = false
+    },
+    hideNavbar () {
+      this.isOpenNavMenu = false
     }
+  },
+  watch: {
+    $route: 'hideNavbar'
   }
 }
 </script>
