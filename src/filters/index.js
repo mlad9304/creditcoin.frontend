@@ -8,7 +8,8 @@ function pluralize (time, label) {
 }
 
 export function timesAgo (time) {
-  const between = Date.now() / 1000 - new Date(time).getTime() / 1000
+  const timezoneOffset = new Date().getTimezoneOffset() * 60
+  const between = Date.now() / 1000 - new Date(time).getTime() / 1000 + timezoneOffset
   if (between < 3600) {
     return pluralize(~~(between / 60), ' minute')
   } else if (between < 86400) {
