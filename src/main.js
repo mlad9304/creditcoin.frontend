@@ -5,6 +5,16 @@ import App from './App'
 import router from './router'
 import store from './store'
 import * as filters from './filters' // global filters
+import VueMq from 'vue-mq'
+
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 479,
+    md: 767,
+    lg: 991,
+    xl: 1200
+  }
+})
 
 Vue.config.productionTip = false
 
